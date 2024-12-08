@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordering System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DopE Shoe Store</h1>
+    </header>
+    <main>
+        <!-- Product container for 3 items per row -->
+        <div class="product-container">
+            <div class="product">
+                <img src="img/m1906rnr_nb_05_i.webp" alt="Brown Sugar">
+                <p> m1906rnr NB 05- &#8369 5000</p>
+                <label for="size1">Size:</label>
+                <select id="size1" onchange="updatePrice(1, 'm1906rnr NB 05')">
+                    <option value="35">PH 35</option>
+                    <option value="36">PH 36</option>
+                    <option value="37">PH 37</option>
+                    <option value="38">PH 38</option>
+                    <option value="39">PH 39</option>
+                    <option value="40">PH 40</option>
+                    <option value="41">PH 41</option>
+                </select>
+                <button onclick="addToCart(getSelectedPrice('size1'), 'm1906rnr NB 05')">Add to Cart</button>
+            </div>
+        
+            <div class="product">
+                <img src="img/1906 Utility.webp" alt="Cheesecake">
+                <p>1906 Utility - &#8369 1200</p>
+                <label for="size2">Size:</label>
+                <select id="size2" onchange="updatePrice(2, 'Cheesecake')">
+                    <option value="35">PH 35</option>
+                    <option value="36">PH 36</option>
+                    <option value="37">PH 37</option>
+                    <option value="38">PH 38</option>
+                    <option value="39">PH 39</option>
+                    <option value="40">PH 40</option>
+                    <option value="41">PH 41</option>
+                </select>
+                <button onclick="addToCart(getSelectedPrice('size2'), '1906 Utility')">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/nb numeric 440high v2.webp" alt="Choco Kisses">
+                <p>nb numeric 440high v2 - &#8369 3000</p>
+                <label for="size3">Size:</label>
+                <select id="size3" onchange="updatePrice(3, 'nb numeric 440high v2')">
+                    <option value="35">PH 35</option>
+                    <option value="36">PH 36</option>
+                    <option value="37">PH 37</option>
+                    <option value="38">PH 38</option>
+                    <option value="39">PH 39</option>
+                    <option value="40">PH 40</option>
+                    <option value="41">PH 41</option>
+                </select>
+                <button onclick="addToCart(getSelectedPrice('size3'), 'nb numeric 440high v2')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-container">
+            <div class="product">
+                <img src="img/480.webp" alt="480">
+                <p>NB 480  - &#8369 1200</p>
+                <label for="size4">Size:</label>
+                <select id="size4" onchange="updatePrice(4, 'NB 480')">
+                    <option value="35">PH 35</option>
+                    <option value="36">PH 36</option>
+                    <option value="37">PH 37</option>
+                    <option value="38">PH 38</option>
+                    <option value="39">PH 39</option>
+                    <option value="40">PH 40</option>
+                    <option value="41">PH 41</option>
+                </select>
+                <button onclick="addToCart(getSelectedPrice('size4'), 'NB 480')">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/1906R.webp" alt="123">
+                <p>NB 1906R - &#8369 2000</p>
+                <label for="size5">Size:</label>
+                <select id="size5" onchange="updatePrice(5, 'NB 1906R')">
+                    <option value="35">PH 35</option>
+                    <option value="36">PH 36</option>
+                    <option value="37">PH 37</option>
+                    <option value="38">PH 38</option>
+                    <option value="39">PH 39</option>
+                    <option value="40">PH 40</option>
+                    <option value="41">PH 41</option>
+                </select>
+                <button onclick="addToCart(getSelectedPrice('size5'), 'NB 1906R')">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/fresh foam arishi v4.webp" alt="Okinawa">
+                <p>fresh foam arishi v4 - &#8369 3000</p>
+                <label for="size6">Size:</label>
+                <select id="size6" onchange="updatePrice(6, 'fresh foam arishi v4')">
+                    <option value="35">PH 35</option>
+                    <option value="36">PH 36</option>
+                    <option value="37">PH 37</option>
+                    <option value="38">PH 38</option>
+                    <option value="39">PH 39</option>
+                    <option value="40">PH 40</option>
+                    <option value="41">PH 41</option>
+                </select>
+                <button onclick="addToCart(getSelectedPrice('size6'), 'fresh foam arishi v4')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-container">
+            <div class="product">
+                <img src="img/Fresh Foam x 860v14.webp" alt="Matcha">
+                <p>Fresh Foam x 860v14 - &#8369 1300</p>
+                <label for="size7">Size:</label>
+                <select id="size7" onchange="updatePrice(7, 'Fresh Foam x 860v14')">
+                    <option value="35">PH 35</option>
+                    <option value="36">PH 36</option>
+                    <option value="37">PH 37</option>
+                    <option value="38">PH 38</option>
+                    <option value="39">PH 39</option>
+                    <option value="40">PH 40</option>
+                    <option value="41">PH 41</option>
+                </select>
+                <button onclick="addToCart(getSelectedPrice('size7'), 'Fresh Foam x 860v14')">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/fresh foam X cruz v3.webp" alt="Matcha">
+                <p>fresh foam X cruz v3- &#8369 5000</p>
+                <label for="size8">Size:</label>
+                <select id="size8" onchange="updatePrice(8, 'img/fresh foam X cruz v3')">
+                    <option value="35">PH 35</option>
+                    <option value="36">PH 36</option>
+                    <option value="37">PH 37</option>
+                    <option value="38">PH 38</option>
+                    <option value="39">PH 39</option>
+                    <option value="40">PH 40</option>
+                    <option value="41">PH 41</option>
+                </select>
+                <button onclick="addToCart(getSelectedPrice('size8'), 'img/fresh foam X cruz v3')">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="img/1906A.webp" alt="Matcha">
+                <p>NB 1906A - &#8369 2500</p>
+                <label for="size9">Size:</label>
+                <select id="size9" onchange="updatePrice(9, 'NB 1906A')">
+                    <option value="35">PH 35</option>
+                    <option value="36">PH 36</option>
+                    <option value="37">PH 37</option>
+                    <option value="38">PH 38</option>
+                    <option value="39">PH 39</option>
+                    <option value="40">PH 40</option>
+                    <option value="41">PH 41</option>
+                </select>
+                <button onclick="addToCart(getSelectedPrice('size9'), 'NB 1906A')">Add to Cart</button>
+            </div>
+        </div>
+
+   
+        <!-- Additional Products go here -->
+
+        <!-- Cart Section -->
+        <aside class="cart">
+            <h2>Cart</h2>
+            <div id="cartItems"></div>
+            <div class="cart-summary">
+                <p>Total: &#8369 <span id="cartTotal">0.00</span></p>
+                <label for="payment">Payment: &#8369</label>
+                <input type="number" id="payment" placeholder="Enter payment">
+                <button onclick="calculateChange()">Calculate Change</button>
+                <p>Change: &#8369 <span id="change">0.00</span></p>
+                <button onclick="checkout()">Checkout</button>
+            </div>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
